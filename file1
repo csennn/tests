@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class words {
+
+	public static void main(String[] args) {
+        try (Scanner in = new Scanner(System.in)) {
+			String entry = in.next();
+			int start = in.nextInt();
+			int end = in.nextInt();
+			String word ="";
+			
+			for (int i=0; i<entry.length();i++){
+			    char char_entry = entry.charAt(i);
+			    if (i>=start && i<end){
+			        word+=char_entry;
+			    }
+			}
+			System.out.println(word);
+		}
+
+    }
+    }
